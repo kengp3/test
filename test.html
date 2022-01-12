@@ -7,9 +7,11 @@
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script>
       $(function () {
-        var chkIndex = getParameter('chk');
-        $("input[type='checkbox']").prop('checked', false);
-        $("input[type='checkbox']").eq(chkIndex).prop('checked', true);
+        $(window).unload(function () {
+          var chkIndex = getParameter('chk');
+          $("input[type='checkbox']").prop('checked', false);
+          $("input[type='checkbox']").eq(chkIndex).prop('checked', true);
+        });
 
         $("input[type='checkbox']").click(function (e) {
           $("input[type='checkbox']").prop('checked', false);

@@ -16,8 +16,7 @@
         $("input[type='checkbox']").click(function (e) {
           $("input[type='checkbox']").prop('checked', false);
           $(e.target).prop('checked', true);
-          //window.history.replaceState(null, null, '?chk=' + e.target.value);
-          window.history.replaceState(null, null, '?chk=2');
+          window.history.replaceState(null, null, '?chk=' + e.target.value);
           window.location = "https://www.google.com.tw";
         });
       });

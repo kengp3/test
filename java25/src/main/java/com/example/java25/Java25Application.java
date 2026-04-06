@@ -1,0 +1,12 @@
+package com.example.java25;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Java25Application {
+
+    public static void main(String[] args) {
+        SpringApplication.run(Java25Application.class, args);
+    }
+}
